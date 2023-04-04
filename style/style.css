@@ -1,0 +1,61 @@
+:root
+{
+    --bg-color:rgba(204, 204, 204, 1);
+    --dark-bg-color:#131313;
+    --orange-text-color:rgba(250, 129, 76, 1);
+    --text-main-color:#ffffff;
+    --secondary-text-color:rgb(103, 102, 102);
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar
+{
+    background: var(--bg-color) !important;
+}
+.container .navbar-brand span
+{
+    color: var(--orange-text-color);
+}
+.navbar-nav .navbar-item a
+{
+    color: var(--secondary-text-color);
+}
+.home-sec
+{
+    background: var(--bg-color);
+}
+.home-sec h1
+{
+    color: var(--text-main-color);
+    display: flex;
+    font-size: 6rem;
+    font-weight: 700;
+    flex-direction: column;
+    left: 32%;
+    line-height: 1;
+    letter-spacing: .15ch;
+    top: 20%;
+    /* transform: translateX(70%) translateY(10%); */
+}
+.home-sec h1 .title-body
+{
+    color: var(--orange-text-color);
+}
+.home-sec p
+{
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    left: 45%;
+    top: 63%;
+    /* transform: translateX(75%) translateY(0%); */
+}
+.home-sec a
+{
+    color: var(--orange-text-color);
+    top: 90%;
+    left: 50%;
+}
