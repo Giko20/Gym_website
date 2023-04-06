@@ -44,12 +44,16 @@
 }
 .home-sec img
 {
-    left: auto;
+    border: 1px solid #131313;
+    left: 40%;
+    width: 65%;
+    z-index: 100;
 }
 .home-sec a
 {
     color: var(--orange-text-color);
-    top: 90%;
+    top: 70%;
+    left: 10%;
 } 
 /* for xl size */
 /* .home-sec h1
