@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=alkatra:wght@200&display=swap');
+
 :root
 {
     --bg-color:rgba(204, 204, 204, 1);
@@ -5,69 +7,121 @@
     --orange-text-color:rgba(250, 129, 76, 1);
     --text-main-color:#ffffff;
     --secondary-text-color:rgb(103, 102, 102);
+    --header-transparent-color: rgba(204, 204, 204, .5);
 }
 *
 {
     box-sizing: border-box;
+    font-family: sans-serif;
     margin: 0;
-    padding: 0;
     overflow-x: hidden;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body
+{
+    min-height: 100vh;
+}
+.header
+{
+    align-items: center;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: .3rem 8%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.logo
+{
+    cursor: default;
+    display: flex;
+    font-size: 1.5rem;
+}
+.logo span
+{
+    align-items: center;
+    color: var(--orange-text-color);
+    display: flex;
 }
 .navbar
 {
-    background: var(--bg-color) !important;
+    margin-left: auto;
 }
-.container .navbar-brand span
-{
-    color: var(--orange-text-color);
-}
-.navbar-nav .navbar-item a
+.navbar a
 {
     color: var(--secondary-text-color);
+    font-size: 1rem;
+    margin-left: 3rem;
+    transition: .3s;
+}
+.navbar .switch-div i
+{
+    border-radius: 50%;
+    transition: .5s;
+}
+.navbar .switch-div i:hover
+{
+    color: var(--dark-bg-color);
+    transform: scale(1.1);
+}
+.navbar a:hover, .navbar a.active
+{
+    color: var(--main-color);
+    /* border-bottom: var(--orange-text-color); */
+}
+#menu-icon
+{
+    color: var(--text-color);
+    display: none;
+    font-size: 3.6rem;
 }
 .home-sec
 {
     background: var(--bg-color);
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.home-sec .home-image
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-height: 60%;
+    width: 65%;
+}
+.home-image img
+{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 10%;
+    z-index: 5;
 }
 .home-sec h1
 {
     color: var(--text-main-color);
-    font-size: 4rem;
-    font-weight: 700;
-    left: 5%;
-    line-height: .9;
-    letter-spacing: .15ch;
-}
-.home-sec h1 .title-body
-{
-    color: var(--orange-text-color);
-}
-.home-sec img
-{
-    border: 1px solid #131313;
-    left: 40%;
-    width: 65%;
-    z-index: 100;
-}
-.home-sec a
-{
-    color: var(--orange-text-color);
-    top: 70%;
-    left: 10%;
-} 
-/* for xl size */
-/* .home-sec h1
-{
-    color: var(--text-main-color);
     display: flex;
-    font-size: 6rem;
+    flex-wrap: wrap;
+    font-size: 7rem;
     font-weight: 700;
-    flex-direction: column;
-    left: 32%;
-    line-height: 1;
-    letter-spacing: .15ch;
-    top: 20%;
-    transform: translateX(70%) translateY(10%);
+    left: 45%;
+    line-height: 1.1;
+    overflow: hidden;
+    position: absolute;
+    top: 27%;
+    /* transform: translateX(70%) translateY(10%); */
+}
+.home-sec h1 span
+{
+    overflow: hidden;
 }
 .home-sec h1 .title-body
 {
@@ -77,13 +131,168 @@
 {
     color: var(--secondary-text-color);
     font-weight: 700;
-    left: 45%;
+    left: 57.5%;
+    position: absolute;
     top: 63%;
-    transform: translateX(75%) translateY(0%);
+    width: 500px;
+    /* transform: translateX(75%) translateY(0%); */
 }
-.home-sec a
+.about-us 
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.about-us .about-image
+{
+    width: 50%;
+    position: relative;
+}
+.about-image img
+{
+    width: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+/* .about-image img::after
+{
+    content: '';
+    height: 100%;
+    width: 20px;
+    background-color: var(--orange-text-color);
+    display: flex;
+    position: absolute;
+    border: 1px solid;
+    z-index: 10;
+} */
+.about-us .about-text
+{
+    align-items: center;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+}
+.about-text h2
 {
     color: var(--orange-text-color);
-    top: 90%;
-    left: 50%;
-} */
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.about-text h2 span
+{
+    color: var(--secondary-text-color);
+}
+.about-text p
+{
+    color: var(--secondary-text-color);
+    width: 300px;
+}
+.trainers-sec
+{
+    align-items: center;
+    background: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.trainers-sec .trainers-text
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.trainers-text h2, p
+{
+    color: var(--text-main-color);
+}
+.trainers-text h2
+{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.trainers-text h2 span
+{
+    color: var(--orange-text-color);
+}
+.trainers-sec .trainers-photo
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.trainers-photo .t-photo
+{
+    width: 25%;
+    overflow: hidden;
+}
+.t-photo img
+{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.prices-sec
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.prices-sec h2
+{
+    color: var(--secondary-text-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.prices-sec .prices-wrapper
+{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+}
+.prices-wrapper .price-detail
+{
+    align-items: center;
+    /* border: 1px solid; */
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 100px;
+    width: 33.33%;
+}
+.price-detail .p-det
+{
+    border: 3px solid;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+}
+.p-det h4
+{
+    border: 1px solid;
+    padding: 40px;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.p-det h3
+{
+    font-size: 2rem;
+    font-family: alkatra;
+}
+.p-det .packet-detail
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.prices-wrapper .price-detail p
+{
+    color: var(--secondary-text-color);
+}
