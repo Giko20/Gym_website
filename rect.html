@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .rect-image
+        {
+            align-items: center;
+            width: 70px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            transform: rotate(90deg);
+        }
+        .cube i
+        {
+            margin-left: 4px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="rect-image" id="container">
+    </div>
+
+    <script>
+        const container = document.getElementById("container");
+        const cube = document.createElement("div");
+        cube.classList.add("cube");
+
+        for (let i = 0; i < 30; i++) {
+            const circle = document.createElement("i");
+            circle.classList.add("fa-solid", "fa-circle", "fa-2xs");
+            cube.appendChild(circle);
+        }
+
+        container.appendChild(cube);
+    </script>
+</body>
+</html>
