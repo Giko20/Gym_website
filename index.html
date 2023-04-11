@@ -7,10 +7,72 @@
     <title>FITNESS GYM</title>
     <link rel="icon" type="image/png" href="/images/logo.png">
     <link rel="stylesheet" href="/style/style.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- boxicons cdn -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
+    <svg width="0" height="0" class="hidden">
+        <symbol id="email_icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlnsCc="http://creativecommons.org/ns#" xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsSvg="http://www.w3.org/2000/svg" viewBox="0 0 439.371 331.46899">
+          <defs id="defs2441">
+            <marker id="ArrowEnd" markerHeight="3" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+              <path d="M 0,0 L 10,5 L 0,10 L 0,0 z" id="path2444"></path>
+            </marker>
+            <marker id="ArrowStart" markerHeight="3" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+              <path d="M 10,0 L 0,5 L 10,10 L 10,0 z" id="path2447"></path>
+            </marker>
+          </defs>
+          <g id="g2449" transform="translate(-145.3305,-145.3305)">
+            <path d="M 569.374,461.472 L 569.374,160.658 L 160.658,160.658 L 160.658,461.472 L 569.374,461.472 z" id="path2451"></path>
+            <path id="path2453"></path>
+            <path d="M 164.46,164.49 L 340.78,343.158 C 353.849,356.328 377.63,356.172 390.423,343.278 L 566.622,165.928" id="path2455"></path>
+            <path d="M 170.515,451.566 L 305.61,313.46" id="path2457"></path>
+            <path d="M 557.968,449.974 L 426.515,315.375" id="path2459"></path>
+          </g>
+        </symbol>
+        <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 128 128" xml:space="preserve" viewBox="0 0 128 128" id="facebook_icon">
+          <g id="facebook">
+            <g id="XMLID_69_">
+              <path id="XMLID_71_" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                  M70,118V78H54V62h16V42c0-8.836,7.164-16,16-16h16v16H90c-2.211,0-4,1.789-4,4v16h16l-2,16H86v40"></path>
+              <path id="XMLID_70_" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                  M61.999,118H18c-4.418,0-8-3.582-8-8V18c0-4.418,3.582-8,8-8h92c4.418,0,8,3.582,8,8v92c0,4.418-3.582,8-8,8H86.001"></path>
+            </g>
+          </g>
+        </symbol>
+        <symbol version="1.1" id="instagram_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 56.7 56.7" xml:space="preserve" viewBox="0 0 56.7 56.7">
+          <g>
+            <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+              c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"></path>
+            <circle cx="41.5" cy="16.4" r="2.9"></circle>
+            <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+              h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+              s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+              c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"></path>
+          </g>
+        </symbol>
+        <symbol enable-background="new 0 0 32 32" id="location_icon" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+          <desc></desc>
+          <g>
+            <path d="M27,12   c0-6.075-4.925-11-11-11S5,5.925,5,12c0,8,11,19,11,19S27,20,27,12z" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path>
+            <circle cx="16" cy="12" fill="none" r="4" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></circle>
+          </g>
+        </symbol>
+        <symbol enable-background="new 0 0 50 50" id="phone_icon" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+          <rect fill="none" height="50" width="50"></rect>
+          <path d="M30.217,35.252c0,0,4.049-2.318,5.109-2.875  c1.057-0.559,2.152-0.7,2.817-0.294c1.007,0.616,9.463,6.241,10.175,6.739c0.712,0.499,1.055,1.924,0.076,3.32  c-0.975,1.396-5.473,6.916-7.379,6.857c-1.909-0.062-9.846-0.236-24.813-15.207C1.238,18.826,1.061,10.887,1,8.978  C0.939,7.07,6.459,2.571,7.855,1.595c1.398-0.975,2.825-0.608,3.321,0.078c0.564,0.781,6.124,9.21,6.736,10.176  c0.419,0.66,0.265,1.761-0.294,2.819c-0.556,1.06-2.874,5.109-2.874,5.109s1.634,2.787,7.16,8.312  C27.431,33.615,30.217,35.252,30.217,35.252z" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="clock_icon">
+          <defs></defs>
+          <title></title>
+          <g id="Layer_15">
+            <path d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"></path>
+            <path d="M20.24,21.66l-4.95-4.95A1,1,0,0,1,15,16V8h2v7.59l4.66,4.65Z"></path>
+          </g>
+        </symbol>
+    </svg>
     <div class="main-wrapper">
         <!--  navbar start -->
         <header class="header">
@@ -52,6 +114,8 @@
                 </p>
             </div>
         </section>
+        <!-- about section end -->
+        <!-- trainers section start -->
         <section class="trainers-sec" id="trainers">
             <div class="trainers-text">
                 <h2>OUR <span>TRAINERS</span></h2>
@@ -72,6 +136,8 @@
                 </div>
             </div>
         </section>
+        <!-- trainer section end -->
+        <!-- prices section start -->
         <section class="prices-sec" id="prices">
             <h2>PRICES</h2>
             <div class="prices-wrapper">
@@ -110,6 +176,94 @@
                 </div>
             </div>
         </section>
+        <!-- prices section end -->
+        <!-- gallery section start -->
+        <section class="gallery-sec" id="gallery">
+            <h2>CHECK OUT OUR <span>GALLERY</span></h2>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-chevron-left fa-xl"></i>
+                <div class="carousel">
+                    <img src="/images/slider_image_1.jpg" alt="img">
+                    <img src="/images/slider_image_2.png" alt="img">
+                    <img src="/images/slider_image_3.png" alt="img">
+                    <img src="/images/slider_image_4.jpg" alt="img">
+                    <img src="/images/slider_image_5.jpg" alt="img">
+                    <img src="/images/slider_image_6.jpg" alt="img">
+                    <img src="/images/slider_image_7.jpg" alt="img">
+                    <img src="/images/slider_image_8.jpg" alt="img">
+                    <img src="/images/slider_image_9.jpg" alt="img">
+                    <img src="/images/slider_image_10.jpg" alt="img">
+                    <img src="/images/slider_image_11.jpg" alt="img">
+                    <img src="/images/slider_image_12.jpg" alt="img">
+                    <img src="/images/slider_image_13.jpeg" alt="img">
+                </div>
+                <i id="right" class="fa-solid fa-chevron-right fa-xl"></i>
+            </div>
+        </section>
+        <!-- gallery section end -->
+        <!-- contact section start -->
+        <section class="contact-us" id="contact">
+            <h2>CONTACT <span>US</span></h2>
+            <div class="contact-area">
+                <div class="contact-part">
+                    <p>feel free to contact us any time. 
+                        we will get back to you as soon as we can
+                    </p>
+                    <form method="POST" action="#contact" onsubmit="sendEmail(); reset(); return false;">
+                        <div class="input-box">
+                            <label for="full-name">name</label>
+                            <input type="text" name="full-name" id="full-name" placeholder="John Doe">
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                            <label for="form-textarea">message</label>
+                            <textarea id="form-textarea" rows="5" placeholder="How can I help..."></textarea>
+                        </div>
+                        <input type="submit" value="SEND" class="btn" id="submit-btn">
+                    </form>
+                </div>
+                <div class="info-part">
+                    <h3>Info</h3>
+                    <div class="con" id="email-info">
+                        <svg class="icon">
+                            <use xlink:href="#email_icon"></use>
+                        </svg>
+                        <p>bestgym@gmail.com</p>
+                    </div>
+                    <div class="con" id="phone-info">
+                        <svg class="icon">
+                            <use xlink:href="#phone_icon"></use>
+                        </svg>
+                        <p>+322 458 987</p>
+                    </div>
+                    <div class="con" id="location-info">
+                        <svg class="icon">
+                            <use xlink:href="#location_icon"></use>
+                        </svg>
+                        <p>28 pekini str.</p>
+                    </div>
+                    <div class="con" id="working-hour-info">
+                        <svg class="icon">
+                            <use xlink:href="#clock_icon"></use>
+                        </svg>
+                        <p>10:00 - 22:00</p>
+                    </div>
+                    <div class="info-footer">
+                        <p>Follow Us On</p>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#instagram_icon"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#facebook_icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section end -->
     </div>
 </body>
 </html>

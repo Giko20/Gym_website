@@ -255,17 +255,23 @@ body
     /* border: 1px solid; */
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 .prices-wrapper .price-detail
 {
     align-items: center;
-    /* border: 1px solid; */
     color: var(--secondary-text-color);
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 50px 100px;
-    width: 33.33%;
+    padding: 50px 80px;
+    transition: .1s ease;
+    width: calc(100% / 3);
+}
+.prices-wrapper .price-detail:hover
+{
+    color: var(--orange-text-color);
+    transform: scale(1.1);
 }
 .price-detail .p-det
 {
@@ -295,4 +301,218 @@ body
 .prices-wrapper .price-detail p
 {
     color: var(--secondary-text-color);
+}
+.gallery-sec
+{
+    align-items: center;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 5% 0%;
+    position: relative;
+}
+.gallery-sec h2
+{
+    color: var(--text-main-color);
+    font-size: 2.5rem;
+}
+.gallery-sec h2 span
+{
+    color: var(--orange-text-color);
+}
+.wrapper
+{
+    display: flex;
+    padding: 3% 5%;
+    position: relative;
+    width: 100%;
+}
+.wrapper i
+{
+    cursor: pointer;
+    color: var(--secondary-text-color);
+    font-size: 5rem;
+    line-height: 100%;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50%);
+    transition: 0.5s ease;
+    top: 50%;
+}
+.wrapper i:hover
+{
+    color: var(--orange-text-color);
+}
+.wrapper i:first-child
+{
+    display: none;
+    left: 25px;
+}
+.wrapper i:last-child
+{
+    right: 25px;
+}
+.wrapper .carousel
+{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+.carousel.dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 350px;
+    user-select: none;
+    margin-left: 14px;
+    object-fit: cover;
+    width: calc(100% / 4);
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+.contact-us
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+}
+.contact-us h2
+{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: var(--orange-text-color);
+}
+.contact-us h2 span
+{
+    color: var(--secondary-text-color);
+}
+.contact-us .contact-area
+{
+    display: flex;
+    width: 100%;
+}
+.contact-us .contact-part
+{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+    width: 50%;
+}
+.contact-part form
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-part form .input-box
+{
+    display: flex;
+    flex-direction: column;
+}
+.input-box input
+{
+    border: 1px solid;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.input-box label
+{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--orange-text-color);
+}
+form textarea
+{
+    padding: 5px;
+}
+form .btn
+{
+    margin-top: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid var(--orange-text-color);
+    background-color: var(--text-main-color);
+    color: var(--orange-text-color);
+    transition: .5s ease-in-out;
+}
+form .btn:hover
+{
+    background: var(--orange-text-color);
+    color: var(--text-main-color);
+}
+.contact-us .info-part
+{
+    display: flex;
+    flex-direction: column;
+    background: var(--orange-text-color);
+    padding: 40px;
+    width: 50%;
+}
+.info-part h3
+{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.info-part .con
+{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.info-part .con .icon
+{
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+}
+.info-part .info-footer
+{
+    margin-top: auto;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.info-part .info-footer p
+{
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+.info-part .info-footer .icon
+{
+    height: 40px;
+    width: 40px;
+    fill: var(--text-main-color);
+}
+
+
+
+
+@media screen and (max-width: 900px) 
+{
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) 
+{
+    .carousel img{
+        width: 100%;
+    }
 }
