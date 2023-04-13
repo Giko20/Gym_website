@@ -229,6 +229,16 @@ body
 {
     width: 25%;
     overflow: hidden;
+    position: relative;
+}
+.t-photo img
+{
+    filter: grayscale(100%);
+    transition: filter .25s;
+}
+.t-photo img:hover
+{
+    filter: grayscale(0%);
 }
 .t-photo img
 {
