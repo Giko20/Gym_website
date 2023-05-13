@@ -71,8 +71,7 @@ body
 }
 .navbar a:hover, .navbar a.active
 {
-    color: var(--main-color);
-    /* border-bottom: var(--orange-text-color); */
+    color: var(--orange-text-color);
 }
 #menu-icon
 {
