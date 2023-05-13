@@ -145,8 +145,10 @@ body
 }
 .about-us .about-image
 {
-    width: 50%;
+    width: 70%;
+    height: 630px;
     position: relative;
+    overflow: hidden;
 }
 .about-image img
 {
