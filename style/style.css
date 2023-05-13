@@ -189,7 +189,7 @@ body
     display: flex;
     flex-direction: column;
     padding-top: 50px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 .trainers-sec .trainers-text
 {
@@ -245,6 +245,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 70px 50px;
 }
 .prices-sec h2
 {
@@ -267,7 +268,7 @@ body
     flex-direction: column;
     text-align: center;
     padding: 50px 80px;
-    transition: .1s ease;
+    transition: .3s ease;
     width: calc(100% / 3);
 }
 .prices-wrapper .price-detail:hover
@@ -311,7 +312,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 5% 0%;
     position: relative;
 }
